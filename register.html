@@ -1,0 +1,29 @@
+{% extends 'layout.html' %}
+{% block title %}Register - Flask ToDo{% endblock %}
+{% block content %}
+<div class="row justify-content-center">
+  <div class="col-md-8 col-lg-6">
+    <h3>Register</h3>
+    <form method="POST">
+      {{ form.hidden_tag() }}
+      <div class="mb-3">
+        {{ form.name.label }} {{ form.name(class_='form-control') }}
+      </div>
+      <div class="mb-3">
+        {{ form.email.label }} {{ form.email(class_='form-control') }}
+      </div>
+      <div class="mb-3">
+        {{ form.password.label }} {{ form.password(class_='form-control') }}
+      </div>
+      <div class="mb-3">
+        {{ form.confirm.label }} {{ form.confirm(class_='form-control') }}
+      </div>
+      <div class="mb-3">
+        {{ form.submit(class_='btn btn-success') }}
+        <a href="{{ url_for('home') }}" class="btn btn-link">Back to Login</a>
+      </div>
+    </form>
+  </div>
+</div>
+
+{% endblock %}

@@ -1,0 +1,36 @@
+{% extends 'layout.html' %}
+{% block title %}{{ action }} - Flask ToDo{% endblock %}
+{% block content %}
+<div class="row justify-content-center">
+  <div class="col-md-8">
+    <h3>{{ action }}</h3>
+    <form method="POST">
+      {{ form.hidden_tag() }}
+      <div class="mb-3">
+        {{ form.title.label }} {{ form.title(class_='form-control') }}
+      </div>
+      <div class="mb-3">
+        {{ form.description.label }} {{ form.description(class_='form-control', rows=4) }}
+      </div>
+      <div class="mb-3">
+        {{ form.due_date.label }} {{ form.due_date(class_='form-control') }}
+        <div class="form-text">Format: YYYY-mm-dd HH:MM (e.g. 2025-11-05 14:30). Leave empty if no due date.</div>
+      </div>
+      <div class="mb-3">
+        {{ form.priority.label }} {{ form.priority(class_='form-select') }}
+      </div>
+      <div class="mb-3">
+        {{ form.category.label }} {{ form.category(class_='form-control') }}
+      </div>
+      <div class="mb-3">
+        {{ form.reminder.label }} {{ form.reminder(class_='form-control') }}
+      </div>
+      <div class="mb-3">
+        {{ form.submit(class_='btn btn-primary') }}
+        <a href="{{ url_for('dashboard') }}" class="btn btn-link">Back</a>
+      </div>
+    </form>
+  </div>
+</div>
+
+{% endblock %}

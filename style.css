@@ -1,0 +1,242 @@
+/* 🌑 Navbar */
+.navbar {
+    background-color: #0a0a0a !important;
+    border-bottom: 1px solid #1c1c1c;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.85);
+}
+.navbar-brand {
+    color: #00c99a !important;
+    font-weight: 600;
+}
+.navbar-nav .nav-link {
+    color: #d4d4d4 !important;
+    transition: all 0.3s ease;
+}
+.navbar-nav .nav-link:hover {
+    color: #00f0b0 !important;
+}
+
+/* 🟢 Dashboard Heading */
+h3 {
+    color: #00c99a;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+/* 🟢 Add Task Button */
+.btn-primary {
+    background-color: #00c99a;
+    border: none;
+    color: #000;
+    font-weight: 600;
+    padding: 10px 20px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+.btn-primary:hover {
+    background-color: #00b88a;
+    box-shadow: 0 0 16px #00c99a99;
+    color: #000;
+}
+
+/* 🌿 Tabs — Alignment Fixed */
+.nav-tabs {
+    border-bottom: 2px solid #00c99a;
+    margin-bottom: 20px;
+}
+.nav-tabs .nav-link {
+    background-color: #1c1c1c;
+    color: #d4d4d4;
+    border: none;
+    border-radius: 10px 10px 0 0;
+    padding: 10px 20px;
+    margin-bottom: -2px; /* 👈 Pull tab up to align with green line */
+    transition: all 0.3s ease;
+}
+.nav-tabs .nav-link:hover {
+    background-color: #2a2a2a;
+    color: #00f0b0;
+}
+.nav-tabs .nav-link.active {
+    background-color: #00c99a;
+    color: #000;
+    font-weight: 600;
+    box-shadow: 0 0 12px #00c99a88;
+    border: none;
+    margin-bottom: -2px; /* 👈 Same pull-up for active tab */
+}
+
+/* 🌑 Table Wrapper for Rounded Corners + Glow */
+.table-wrapper {
+    background-color: #121212;
+    border: 2px solid #00c99a;
+    border-radius: 16px;
+    padding: 10px;
+    box-shadow: 0 0 24px rgba(0, 201, 154, 0.25);
+    margin-bottom: 30px;
+}
+
+/* 🌿 Custom Dark Table */
+.custom-dark-table {
+    width: 100%;
+    background-color: #121212;
+    color: #e0e0e0;
+    border-collapse: separate;
+    border-spacing: 0;
+}
+.custom-dark-table thead {
+    background-color: #00c99a;
+    color: #000;
+    font-weight: 600;
+}
+.custom-dark-table tbody tr:hover {
+    background-color: #1f1f1f;
+}
+.custom-dark-table td, .custom-dark-table th {
+    padding: 14px 18px;
+    border-top: 1px solid #2c2c2c;
+}
+
+/* 🟢 Action Buttons */
+.btn-outline-danger {
+    color: #ff4d4d;
+    border: 1px solid #ff4d4d;
+    background-color: transparent;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+.btn-outline-danger:hover {
+    background-color: #ff4d4d;
+    color: #fff;
+    box-shadow: 0 0 12px #ff4d4d88;
+}
+
+.btn-outline-success {
+    color: #00c99a;
+    border: 1px solid #00c99a;
+    background-color: transparent;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+.btn-outline-success:hover {
+    background-color: #00c99a;
+    color: #000;
+    box-shadow: 0 0 12px #00c99a88;
+}
+
+.btn-outline-secondary {
+    color: #d4d4d4;
+    border: 1px solid #777;
+    background-color: transparent;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+.btn-outline-secondary:hover {
+    background-color: #2a2a2a;
+}
+
+/* 🟢 Status Badge */
+.badge.bg-success {
+    background-color: #00c99a !important;
+    color: #000;
+    padding: 6px 12px;
+    font-weight: 600;
+    border-radius: 10px;
+    box-shadow: 0 0 14px #00c99a66;
+}
+.badge.bg-secondary {
+    background-color: #444 !important;
+    color: #bbb;
+    padding: 6px 12px;
+    font-weight: 500;
+    border-radius: 10px;
+}
+
+/* 🌑 Register Container */
+.row.justify-content-center {
+    margin-top: 40px;
+}
+.col-md-8.col-lg-6 {
+    background-color: #121212;
+    padding: 40px;
+    border-radius: 16px;
+    border: 2px solid #00c99a;
+    box-shadow: 0 0 24px rgba(0, 201, 154, 0.25);
+}
+
+/* 🌿 Form Labels */
+form label {
+    color: #d4d4d4;
+    font-weight: 500;
+}
+
+/* 🌿 Input Fields */
+.form-control {
+    background-color: #1c1c1c;
+    color: #e0e0e0;
+    border: 1px solid #00c99a;
+    border-radius: 10px;
+    padding: 10px 14px;
+    transition: all 0.3s ease;
+}
+.form-control:focus {
+    background-color: #1f1f1f;
+    border-color: #00f0b0;
+    box-shadow: 0 0 12px #00c99a88;
+    color: #fff;
+}
+
+/* 🟢 Submit Button */
+.btn-success {
+    background-color: #00c99a;
+    border: none;
+    color: #000;
+    font-weight: 600;
+    padding: 10px 20px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+.btn-success:hover {
+    background-color: #00b88a;
+    box-shadow: 0 0 16px #00c99a99;
+    color: #000;
+}
+
+/* 🔗 Back to Login Link */
+.btn-link {
+    color: #00c99a;
+    font-weight: 500;
+    text-decoration: none;
+}
+.btn-link:hover {
+    color: #00f0b0;
+    text-decoration: underline;
+}
+/* 🌙 Dark Emerald Footer (Matches Full Theme) */
+.footer-custom {
+    background-color: #101010; /* same as body */
+    border-top: 1px solid #00b89455;
+    color: #d4d4d4;
+    text-align: center;
+    padding: 16px 10px;
+    margin-top: 50px;
+    font-size: 0.95rem;
+    font-family: 'Poppins', sans-serif;
+    box-shadow: 0 -2px 10px rgba(0, 184, 148, 0.08);
+    transition: all 0.3s ease;
+}
+
+.footer-custom:hover {
+    box-shadow: 0 -2px 20px rgba(0, 184, 148, 0.25);
+    border-top-color: #00b894;
+}
+
+/* Text + Highlighted Name */
+.footer-custom small {
+    letter-spacing: 0.4px;
+}
+
+.footer-custom small b {
+    color: #00b894; /* Emerald green accent */
+    font-weight: 600;
+}
